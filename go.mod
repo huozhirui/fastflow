@@ -3,8 +3,10 @@ module github.com/shiningrush/fastflow
 go 1.14
 
 require (
+	github.com/go-sql-driver/mysql v1.7.1
 	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
 	github.com/golang/mock v1.6.0
+	github.com/jmoiron/sqlx v1.3.5
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/prometheus/client_golang v1.14.0
 	github.com/shiningrush/goevent v0.1.0

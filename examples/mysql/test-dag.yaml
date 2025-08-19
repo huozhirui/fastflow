@@ -1,0 +1,21 @@
+id: "test-dag"
+name: "MySQL测试工作流"
+vars:
+  message:
+    desc: "要显示的消息"
+    defaultValue: "Hello from MySQL Fastflow!"
+tasks:
+- id: "task1"
+  actionName: "PrintAction"
+- id: "task2"
+  actionName: "PrintAction"
+  dependOn: ["task1"]
+- id: "task3"
+  actionName: "PrintAction"
+  dependOn: ["task2"]
+- id: "task4"
+  actionName: "PrintAction"
+  dependOn: ["task2"]
+- id: "task5"
+  actionName: "PrintAction"
+  dependOn: ["task3", "task4"]
